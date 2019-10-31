@@ -1,23 +1,30 @@
 body {
     font-family: sans-serif;
     color: #333333;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
 }
 
 h1 {
     text-align: center;
 }
+
 .container {
     width: 80%;
     max-width: 800px;
     min-width: 400px;
-    margin: 0 auto;
+    float: left;
 }
 
 .item {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: auto;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .item > img {
@@ -25,8 +32,34 @@ h1 {
     height: 400px;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
 
 .item > .item-content {
-    padding: 0 25px 10px 25px;
+    padding: 10px 25px;
+}
+
+.item-content > h3 {
+    display: inline;
+    cursor: pointer;
+}
+
+aside {
+    display: initial;
+    width: 40%;
+    margin-left: 40px;
+    float: left;
+}
+
+.side {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+tr {
+    line-height: 1.25em;
+}
+td, th {
+    text-align: left;
 }
